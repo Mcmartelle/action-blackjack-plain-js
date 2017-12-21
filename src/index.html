@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Action Blackjack</title>
+  <meta name="description" content="Action Blackjack is a race to 21... in real time!">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="shortcut icon" href="favicon.ico" />
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="js/bootstrap.min.js"></script>
+  <script src="index.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="container">
+      <h1>Action Blackjack</h1>
+      <h2>First to 21 wins! First to 22 loses...</h2>
+    </div>
+    <div class="card text-center">
+      <h4 class="card-title">Score</h4>
+      <p class="card-text"><span id="player-1-score">0</span> to <span id="player-2-score">0</span></p>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="player-area col-sm">
+          <div id="player-1-alert" class="alert alert-warning" role="alert">
+            Ready?
+          </div>
+          <button id="player-1-button" type="button" class="btn btn-primary btn-lg" onclick="player1press()" >PRESS D</button>
+        </div>
+        <div class="player-area col-sm">
+          <div id="player-2-alert" class="alert alert-warning" role="alert">
+            Ready?
+          </div>
+          <button id="player-2-button" type="button" class="btn btn-primary btn-lg" onclick="player2press()">PRESS K</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
