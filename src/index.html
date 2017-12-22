@@ -7,29 +7,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="shortcut icon" href="favicon.ico" />
   <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="index.css">
   <script src="js/bootstrap.min.js"></script>
   <script src="index.js"></script>
 </head>
 
 <body>
   <div class="container">
-    <div class="container">
-      <h1>Action Blackjack</h1>
-      <h2>First to 21 wins! First to 22 loses...</h2>
-    </div>
-    <div class="card text-center">
-      <h4 class="card-title">Score</h4>
-      <p class="card-text"><span id="player-1-score">0</span> to <span id="player-2-score">0</span></p>
+    <div class="container text-center">
+      <h1 class="display-1">HIT HIT STAY</h1>
+      <h2>The realtime blackjack game</h2>
+      <h2>First to 21 wins! First to 22 . . . loses</h2>
     </div>
     <div class="container">
       <div class="row">
-        <div class="player-area col-sm">
+        <div class="player-area card col-sm text-center">
+          <h3 class="card-title">Player 1</h3>
+          <h3 class="card-text"><span class="badge badge-dark">Score <span id="player-1-score">0</span></span></h3>
           <div id="player-1-alert" class="alert alert-warning" role="alert">
             Ready?
           </div>
           <button id="player-1-button" type="button" class="btn btn-primary btn-lg" onclick="player1press()" >PRESS D</button>
         </div>
-        <div class="player-area col-sm">
+        <div class="player-area card col-sm text-center">
+          <h3 class="card-title">Player 2</h3>
+          <h3 class="card-text"><span class="badge badge-dark">Score <span id="player-2-score">0</span></span></h3>
           <div id="player-2-alert" class="alert alert-warning" role="alert">
             Ready?
           </div>
